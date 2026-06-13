@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Ceylon Horizons | Contact Us - Travel Inquiry</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- EmailJS SDK v4 (latest stable) -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+<body>
+
+    <!-- GLASS HEADER -->
+    <header class="header-wrapper">
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">
+                    <i class="fa-solid fa-compass"></i> Ceylon Horizons
+                </a>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="travel.html" class="nav-link">Travel</a></li>
+                    <li><a href="wildlife.html" class="nav-link">Wildlife</a></li>
+                    <li><a href="water-diving.html" class="nav-link">Water & Diving</a></li>
+                    <li><a href="services.html" class="nav-link">Services</a></li>
+                    <li><a href="contact.html" class="nav-link active">Contact</a></li>
+                </ul>
+                <button class="nav-toggle" aria-label="Toggle Menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero-section contact-hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-container">
+            <span class="hero-badge reveal"><i class="fas fa-envelope-open-text"></i> Get In Touch</span>
+            <h1 class="hero-title reveal">Contact Us</h1>
+            <p class="hero-subtitle reveal">Have a question or ready to plan your trip? Reach out to us, and our travel experts will be happy to help.</p>
+        </div>
+    </section>
+
+     <!-- CONTACT FORM SECTION -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-wrapper reveal">
+                
+                <!-- Info Panel -->
+                <div class="contact-info-panel">
+                    <div>
+                        <h2>Contact Information</h2>
+                        <p>We're here to help you design the perfect Sri Lankan getaway. Feel free to call, email, or drop a message.</p>
+                        
+                        <ul class="contact-details">
+                            <li>
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span><strong>Office Address:</strong><br>Colombo, Sri Lanka</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-phone-alt"></i>
+                                <span><strong>Phone:</strong><br>+94 759026156</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-envelope"></i>
+                                <span><strong>Email:</strong><br>pasindunimsaraprabhath@gmail.com</span>
+                            </li>
+                        </ul>
+                    </div>
+
+    
+                    
+                    <div class="contact-socials">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+
+                 <!-- Form Panel - FIXED: Unique IDs, added message field -->
+                <div class="contact-form-panel">
+                    <h3>Send us a Message</h3>
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="from_name">Full Name *</label>
+                            <input type="text" id="from_name" name="from_name" placeholder="John Doe" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email_address">Email Address *</label>
+                            <input type="email" id="email_address" name="email_address" placeholder="john@example.com" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="whatsapp_number">WhatsApp Mobile Number</label>
+                            <input type="tel" id="whatsapp_number" name="whatsapp_number" placeholder="+94 75 902 6156">
+                            <small style="font-size: 12px; color: #666;">We'll reach you via WhatsApp if needed</small>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <input type="text" id="subject" name="subject" placeholder="e.g., Safari Tour, Whale Watching, Rent a Vehicle" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Your Message *</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Tell us about your travel plans, destination, number of people, preferred dates, or any special requests..." required></textarea>
+                        </div>
+                        
+                        <button type="submit" id="submitBtn" class="btn btn-primary btn-submit-contact">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+
+                        <div id="formMessage" class="form-message"></div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER SECTION -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <div class="footer-logo">
+                        <span class="footer-logo-text"><i class="fa-solid fa-compass"></i> Ceylon Horizons</span>
+                    </div>
+                    <p>Discover the rich heritage, vibrant wildlife, and serene beaches of Sri Lanka with our curated travel planning guides. Your next journey starts here.</p>
+                </div>
+                <div class="footer-links-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="travel.html">Travel Catalog</a></li>
+                        <li><a href="wildlife.html">Wildlife Safari</a></li>
+                        <li><a href="water-diving.html">Water & Diving</a></li>
+                        <li><a href="services.html">Fleet Services</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links-col">
+                    <h4>Contact Us</h4>
+                    <ul class="footer-contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> Colombo, Sri Lanka</li>
+                        <li><i class="fas fa-envelope"></i> pasindunimsaraprabhath@gmail.com</li>
+                        <li><i class="fas fa-phone-alt"></i> +94 759026156</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Ceylon Horizons. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/contact.js"></script>
+</body>
+</html>

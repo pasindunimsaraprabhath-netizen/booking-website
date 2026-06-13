@@ -1,0 +1,294 @@
+/* Home Page Specific Custom Styles */
+
+/* 1. Hero Section custom height and background */
+.home-hero {
+    min-height: 95vh;
+}
+
+.home-hero .hero-title {
+    font-size: clamp(3rem, 7vw, 5.5rem);
+    letter-spacing: -2px;
+}
+
+.home-hero .hero-highlight {
+    font-size: clamp(1.2rem, 3vw, 1.8rem);
+    font-family: 'Outfit', sans-serif;
+    color: var(--gold);
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+    display: block;
+    font-weight: 600;
+}
+
+/* Scroll Indicator Mouse */
+.scroll-indicator {
+    position: absolute;
+    bottom: 2.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    color: #ffffff;
+    opacity: 0.8;
+}
+
+.scroll-indicator span {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+
+.scroll-indicator .mouse {
+    width: 24px;
+    height: 38px;
+    border: 2px solid #ffffff;
+    border-radius: 20px;
+    position: relative;
+}
+
+.scroll-indicator .wheel {
+    width: 4px;
+    height: 8px;
+    background: #ffffff;
+    border-radius: var(--radius-full);
+    position: absolute;
+    top: 6px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: scroll-wheel 1.8s ease-in-out infinite;
+}
+
+@keyframes scroll-wheel {
+    0% { opacity: 0; transform: translate(-50%, 0); }
+    30% { opacity: 1; }
+    80% { opacity: 0; transform: translate(-50%, 14px); }
+    100% { opacity: 0; }
+}
+
+/* 2. Destination Cards Section */
+.destinations-section {
+    padding: 6rem 0;
+}
+
+.section-header {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto 4rem;
+}
+
+.section-header .subtitle {
+    color: var(--accent);
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.section-header .title {
+    font-size: clamp(2rem, 4vw, 2.75rem);
+    font-weight: 800;
+    margin-bottom: 1rem;
+}
+
+.section-header p {
+    color: var(--text-muted);
+}
+
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    gap: 2.5rem;
+}
+
+.card {
+    background: var(--bg-card);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+    border: 1px solid var(--border-color);
+    transition: var(--transition-smooth);
+    display: flex;
+    flex-direction: column;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-lg);
+}
+
+.card-img-wrapper {
+    position: relative;
+    height: 240px;
+    overflow: hidden;
+}
+
+.card-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.card:hover .card-img-wrapper img {
+    transform: scale(1.08);
+}
+
+.card-tag {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    background: rgba(15, 52, 46, 0.75);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    color: var(--gold);
+    padding: 0.35rem 0.95rem;
+    border-radius: var(--radius-full);
+    font-size: 0.75rem;
+    font-weight: 600;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    text-transform: uppercase;
+}
+
+.card-body {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.card-meta {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--text-muted);
+    font-size: 0.85rem;
+    font-weight: 500;
+    margin-bottom: 0.75rem;
+}
+
+.card-meta i {
+    color: var(--accent);
+}
+
+.card-body h3 {
+    font-size: 1.45rem;
+    margin-bottom: 0.75rem;
+    font-weight: 700;
+}
+
+.card-body p {
+    color: var(--text-muted);
+    font-size: 0.92rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    flex-grow: 1;
+}
+
+/* Home Quick Booking Form */
+.quick-booking-section {
+    background: linear-gradient(135deg, var(--primary-light), var(--primary-dark));
+    padding: 6rem 0;
+    position: relative;
+    border-radius: var(--radius-lg);
+    margin: 2rem 0;
+    overflow: hidden;
+}
+
+.quick-booking-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://images.pexels.com/photos/1266810/pexels-photo-1266810.jpeg') center/cover no-repeat;
+    opacity: 0.15;
+    z-index: 1;
+}
+
+.booking-container {
+    position: relative;
+    z-index: 2;
+    color: #ffffff;
+}
+
+.booking-container .section-header .title {
+    color: #ffffff;
+}
+
+.booking-container .section-header p {
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.booking-box {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: var(--radius-lg);
+    padding: 3rem;
+    box-shadow: var(--shadow-lg);
+}
+
+.booking-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    align-items: flex-end;
+}
+
+.booking-box label {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.booking-box input, 
+.booking-box select {
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+}
+
+.booking-box input::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.booking-box input:focus, 
+.booking-box select:focus {
+    background: rgba(255, 255, 255, 0.2);
+    border-color: var(--gold);
+    box-shadow: 0 0 0 3px rgba(229, 180, 82, 0.3);
+}
+
+.booking-box select option {
+    background: var(--primary-dark);
+    color: #ffffff;
+}
+
+.booking-box .btn {
+    width: 100%;
+    padding: 0.9rem;
+}
+
+/* Responsiveness Media Queries for Grid */
+@media (max-width: 768px) {
+    .cards-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .booking-box {
+        padding: 1.5rem;
+    }
+    
+    .booking-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+}

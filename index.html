@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ceylon Horizons | Explore Sri Lanka's Timeless Wonders</title>
+    <!-- CSS Stylesheets -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/home.css">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- EmailJS Client Library -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+<body>
+
+    <!-- GLASS HEADER & NAVIGATION -->
+    <header class="header-wrapper">
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">
+                    <i class="fa-solid fa-compass"></i> Ceylon Horizons
+                </a>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link active">Home</a></li>
+                    <li><a href="travel.html" class="nav-link ">Travel</a></li>
+                    <li><a href="wildlife.html" class="nav-link">Wildlife safari</a></li>
+                    <li><a href="water-diving.html" class="nav-link">Water & Diving</a></li>
+                    <li><a href="services.html" class="nav-link">Services</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+                <button class="nav-toggle" aria-label="Toggle Menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero-section home-hero">
+        <img class="hero-image-bg" src="https://images.pexels.com/photos/322437/pexels-photo-322437.jpeg" alt="Scenic Sri Lankan Mountain Train">
+        <div class="hero-overlay"></div>
+        <div class="hero-container">
+            <span class="hero-badge reveal"><i class="fas fa-umbrella-beach"></i> Explore Sri Lanka</span>
+            <span class="hero-highlight reveal">Tourism Promotion Style</span>
+            <h1 class="hero-title reveal">CEYLON HORIZONS</h1>
+            <p class="hero-subtitle reveal">Discover new places, meet new cultures, and make every trip a story worth telling.</p>
+            <div class="hero-actions reveal">
+                <a href="#destinations" class="btn btn-primary"><i class="fa-solid fa-map-location-dot"></i> View Destinations</a>
+                <a href="travel.html" class="btn btn-secondary"><i class="fa-solid fa-compass"></i> Start Planning</a>
+            </div>
+        </div>
+
+
+        
+        <!-- Scroll Mouse Indicator -->
+        <a href="#destinations" class="scroll-indicator">
+            <span>Scroll Down</span>
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+        </a>
+    </section>
+
+    <!-- POPULAR DESTINATIONS GRID -->
+    <section id="destinations" class="destinations-section">
+        <div class="container">
+            
+            <div class="section-header reveal">
+                <span class="subtitle">Our Picks</span>
+                <h2 class="title">Popular Sri Lankan Destinations</h2>
+                <p>Discover breathtaking places, rich culture, and unforgettable adventures curated just for you.</p>
+            </div>
+
+            <div class="cards-grid">
+                
+                <!-- Card 1: Sigiriya -->
+                <div class="card reveal">
+                    <div class="card-img-wrapper">
+                        <img src="https://images.pexels.com/photos/999066/pexels-photo-999066.jpeg" alt="Sigiriya Rock Fortress">
+                        <span class="card-tag">UNESCO Heritage</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-meta">
+                            <i class="fas fa-map-marker-alt"></i> Central Province
+                        </div>
+                        <h3>Sigiriya Rock Fortress</h3>
+                        <p>Ancient sky citadel featuring historical frescoes, mirror wall gardens, and lion's paw gates.</p>
+                        <a href="destinations/sigiriya.html" class="btn btn-primary">Book Now <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Card 2: Nine Arches Bridge -->
+                <div class="card reveal">
+                    <div class="card-img-wrapper">
+                        <img src="https://images.pexels.com/photos/12147639/pexels-photo-12147639.jpeg" alt="Nine Arches Bridge">
+                        <span class="card-tag">Colonial Architecture</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-meta">
+                            <i class="fas fa-map-marker-alt"></i> Ella, Badulla
+                        </div>
+                        <h3>Nine Arches Bridge</h3>
+                        <p>An architectural marvel built amidst lush green hills and mist-shrouded tea plantations.</p>
+                        <a href="destinations/nine-arches-bridge.html" class="btn btn-primary">Book Now <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Card 3: Temple of the Tooth -->
+                <div class="card reveal">
+                    <div class="card-img-wrapper">
+                        <img src="https://images.pexels.com/photos/322437/pexels-photo-322437.jpeg" alt="Temple of the Tooth">
+                        <span class="card-tag">Sacred Shrine</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-meta">
+                            <i class="fas fa-map-marker-alt"></i> Kandy
+                        </div>
+                        <h3>Temple of the Tooth</h3>
+                        <p>Sri Dalada Maligawa, housing the sacred tooth relic of Gautama Buddha in Kandy.</p>
+                        <a href="destinations/temple-of-tooth.html" class="btn btn-primary">Book Now <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Card 4: Galle Fort -->
+                <div class="card reveal">
+                    <div class="card-img-wrapper">
+                        <img src="https://images.pexels.com/photos/27669330/pexels-photo-27669330.jpeg" alt="Galle Dutch Fort">
+                        <span class="card-tag">Colonial Town</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-meta">
+                            <i class="fas fa-map-marker-alt"></i> Galle Coastline
+                        </div>
+                        <h3>Galle Dutch Fort</h3>
+                        <p>Step into colonial history. Explore ancient ramparts, lighthouse vistas, and quaint cobblestone streets.</p>
+                        <a href="destinations/galle-fort.html" class="btn btn-primary">Book Now <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Card 5: Weligama Beach -->
+                <div class="card reveal">
+                    <div class="card-img-wrapper">
+                        <img src="https://images.pexels.com/photos/12475123/pexels-photo-12475123.jpeg" alt="Weligama Surfing">
+                        <span class="card-tag">Surfers Paradise</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-meta">
+                            <i class="fas fa-map-marker-alt"></i> Southern Coast
+                        </div>
+                        <h3>Weligama Beach</h3>
+                        <p>Famous for iconic stilt fishing, rolling surf breaks, and sandy beaches lined with coconut trees.</p>
+                        <a href="destinations/weligama.html" class="btn btn-primary">Book Now <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Card 6: Nilaveli -->
+                <div class="card reveal">
+                    <div class="card-img-wrapper">
+                        <img src="https://images.pexels.com/photos/16962890/pexels-photo-16962890.jpeg" alt="Nilaveli Beach">
+                        <span class="card-tag">Crystal Waters</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-meta">
+                            <i class="fas fa-map-marker-alt"></i> Trincomalee
+                        </div>
+                        <h3>Nilaveli Beach</h3>
+                        <p>A tranquil stretch of white sands, ideal for snorkeling at Pigeon Island National Park.</p>
+                        <a href="destinations/nilaveli.html" class="btn btn-primary">Book Now <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- QUICK TRANSFER BOOKING -->
+    <section class="quick-booking-section">
+        <div class="container booking-container">
+            <div class="section-header reveal">
+                <span class="subtitle">Quick Ride</span>
+                <h2 class="title">Airport, Hotels Arrival & Drop</h2>
+                <p>Do you need to go to the airport or a hotel ? Then fill out this form.</p>
+            </div>
+
+            <div class="booking-box reveal">
+                <form id="homeBookingForm" class="booking-grid">
+                    <div class="form-group">
+                        <label><i class="fas fa-map-marker-alt"></i> Pick-up Location</label>
+                        <input type="text" id="pickup" placeholder="e.g., Colombo Airport (CMB)" required>
+                    </div>
+                    <div class="form-group">
+                        <label><i class="fas fa-hotel"></i> Drop-off location</label>
+                        <input type="text" id="dropoff" placeholder="e.g., Weligama Bay Resort" required>
+                    </div>
+                    <div class="form-group">
+                        <label><i class="fas fa-calendar-alt"></i> Travel Date</label>
+                        <input type="date" id="date" required>
+                    </div>
+                    <div class="form-group">
+                        <label><i class="fas fa-clock"></i> Departure Time</label>
+                        <input type="time" id="time" required>
+                    </div>
+                    <div class="form-group">
+                        <label><i class="fas fa-car-side"></i> Vehicle Type</label>
+                        <select id="vehicleType">
+                            <option>Car (up to 4 persons)</option>
+                            <option>SUV / Jeep (up to 6 persons)</option>
+                            <option>Bus(up to 25 person)</option>
+                            <option>Van (up to 12 persons)</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" id="homeRequestBtn" class="btn btn-primary">Request Booking</button>
+                    </div>
+                </form>
+                <div id="homeFormMessage" class="modal-msg"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER SECTION -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                
+                <!-- About Info -->
+                <div class="footer-about">
+                    <div class="footer-logo">
+                        <span class="footer-logo-text"><i class="fa-solid fa-compass"></i> Ceylon Horizons</span>
+                    </div>
+                    <p>Discover the rich heritage, vibrant wildlife, and serene beaches of Sri Lanka with our curated travel planning guides. Your next journey starts here.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-btn" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-btn" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-btn" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <!-- Quick Navigation Links -->
+                <div class="footer-links-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="travel.html">Travel </a></li>
+                        <li><a href="wildlife.html">Wildlife safari </a></li>
+                        <li><a href="water-diving.html">Water & Diving</a></li>
+                        <li><a href="services.html"> Services</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="footer-links-col">
+                    <h4>Contact Us</h4>
+                    <ul class="footer-contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> Colombo, Sri Lanka</li>
+                        <li><i class="fas fa-envelope"></i> pasindunimsaraprabhath@gmail.com</li>
+                        <li><i class="fas fa-phone-alt"></i> +94 759026156</li>
+                    </ul>
+                </div>
+
+                <div class="footer-links-col">
+                    <h4>Ceylon Horizons</h4>
+                    <p style="font-size: 0.9rem; line-height: 1.5; margin-bottom: 1rem;">Explore new destinations, create lasting memories, and travel with ease. We're here to make every journey extraordinary.</p>
+                </div>
+
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Ceylon Horizons. All rights reserved. | Crafted with <i class="fas fa-heart"></i> for explorers</p>
+                <p>Colombo, Sri Lanka</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Global and Local Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/home.js"></script>
+</body>
+</html>

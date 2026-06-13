@@ -1,0 +1,49 @@
+/* Water & Diving Page Specific Styles */
+
+.water-hero {
+    background: linear-gradient(135deg, rgba(0, 105, 148, 0.7), rgba(0, 50, 80, 0.5)),
+                url('https://images.pexels.com/photos/16673099/pexels-photo-16673099.jpeg') center/cover no-repeat;
+    background-attachment: fixed;
+    min-height: 80vh;
+}
+
+
+
+.water-destinations {
+    padding: 5rem 0 8rem;
+}
+
+.water-destinations .section-header {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto 4rem;
+}
+
+.water-destinations .section-header .subtitle {
+    color: #0088cc;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.water-destinations .section-header .title {
+    font-size: clamp(2rem, 4vw, 2.75rem);
+    font-weight: 800;
+    margin-bottom: 1rem;
+}
+
+.water-destinations .section-header p {
+    color: var(--text-muted);
+}
+
+/* Override primary button for water theme slightly if desired, or keep as primary */
+.btn-water {
+    background: #0088cc;
+    color: white;
+}
+.btn-water:hover {
+    background: #006699;
+}

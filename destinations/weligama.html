@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weligama Beach | Ceylon Horizons</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/destination.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- EmailJS Client Library -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+<body>
+
+    <!-- GLASS HEADER -->
+    <header class="header-wrapper">
+        <div class="container">
+            <nav class="navbar">
+                <a href="../index.html" class="logo">
+                    <i class="fa-solid fa-compass"></i> Ceylon Horizons
+                </a>
+                <ul class="nav-menu">
+                    <li><a href="../index.html" class="nav-link">Home</a></li>
+                    <li><a href="../travel.html" class="nav-link active">Travel</a></li>
+                    <li><a href="../wildlife.html" class="nav-link">Wildlife Safari</a></li>
+                    <li><a href="../water-diving.html" class="nav-link">Water & Diving</a></li>
+                    <li><a href="../services.html" class="nav-link">Services</a></li>
+                    <li><a href="../contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero-section dest-hero" style="background-image: linear-gradient(135deg, rgba(15, 52, 46, 0.7), rgba(0, 0, 0, 0.4)), url('https://images.pexels.com/photos/5042817/pexels-photo-5042817.jpeg');">
+        <div class="hero-container">
+            <span class="hero-badge reveal"><i class="fas fa-water"></i> Surf & Sun</span>
+            <h1 class="hero-title reveal">Weligama Beach</h1>
+            <p class="hero-subtitle reveal">A vibrant surf town on the southern coast known for beginner-friendly waves and iconic stilt fishermen.</p>
+        </div>
+    </section>
+
+    <!-- CONTENT SECTION -->
+    <section class="dest-content-section">
+        <div class="container">
+            <div class="dest-content-wrapper">
+                
+                <!-- Main Content -->
+                <div class="dest-main reveal">
+                    <h2>Catch the Perfect Wave</h2>
+                    <p>Weligama, translating to 'Sandy Village,' is an eclectic mix of traditional fishing village and modern surfer paradise. Located on Sri Lanka's beautiful southern coast, its sprawling, two-kilometer-long bay offers a gentle, sandy break that is perfect for those looking to learn how to surf.</p>
+                    <p>Beyond the surf schools and beachfront cafes, the bay is famous for Taprobane Island, a tiny, picturesque rock island topped with a sprawling villa built in the 1920s. Just offshore, you'll also spot the iconic stilt fishermen perching gracefully above the water at dawn and dusk.</p>
+                    <p>Whether you want to ride the waves, indulge in fresh seafood, or simply relax on the golden sands, Weligama has a laid-back charm that captures the essence of a tropical getaway.</p>
+                    
+                    <div class="dest-gallery">
+                        <img src="https://images.pexels.com/photos/30363420/pexels-photo-30363420.jpeg/" alt="Surfing in Weligama">
+                        <img src="https://images.pexels.com/photos/14339483/pexels-photo-14339483.jpeg/" alt="Stilt Fishermen">
+                    </div>
+                </div>
+
+                <!-- Sidebar -->
+                <div class="dest-sidebar reveal">
+                    <div class="sidebar-widget">
+                        <h3>Quick Facts</h3>
+                        <ul class="widget-info">
+                            <li><i class="fas fa-map-marker-alt"></i> Southern Coast</li>
+                            <li><i class="fas fa-water"></i> Great for Beginner Surfing</li>
+                            <li><i class="fas fa-utensils"></i> Fresh Seafood Hub</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="sidebar-widget">
+                        <h3>Highlights</h3>
+                        <ul class="widget-info">
+                            <li><i class="fas fa-star"></i> Taprobane Island View</li>
+                            <li><i class="fas fa-star"></i> Stilt Fishing (Morning/Evening)</li>
+                            <li><i class="fas fa-star"></i> Sunset Beach Cafes</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- QUICK TRANSFER BOOKING -->
+    <section class="quick-booking-section">
+        <div class="container booking-container">
+            
+
+            <div class="booking-box reveal">
+                <form id="homeBookingForm" class="booking-grid">
+                    <div class="form-group">
+                        <label><i class="fas fa-map-marker-alt"></i> Pick-up Location</label>
+                        <input type="text" id="pickup" placeholder="e.g., Colombo Airport (CMB)" required>
+                    </div>
+                    <div class="form-group">
+                        <label><i class="fas fa-hotel"></i> Drop-off Weligama Beach</label>
+                        <input type="text" id="dropoff" placeholder="e.g., Weligama Beach" required>
+                    </div>
+                    <div class="form-group">
+                        <label><i class="fas fa-calendar-alt"></i> Travel Date</label>
+                        <input type="date" id="date" required>
+                    </div>
+                    <div class="form-group">
+                        <label><i class="fas fa-clock"></i> Departure Time</label>
+                        <input type="time" id="time" required>
+                    </div>
+                    <div class="form-group">
+                        <label><i class="fas fa-car-side"></i> Vehicle Type</label>
+                        <select id="vehicleType">
+                            <option>Car (up to 4 persons)</option>
+                            <option>SUV / Jeep (up to 6 persons)</option>
+                            <option>Bus (up to 4 persons)</option>
+                            <option>Van (up to 12 persons)</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" id="homeRequestBtn" class="btn btn-primary">Request Booking</button>
+                    </div>
+                </form>
+                <div id="homeFormMessage" class="modal-msg"></div>
+            </div>
+        </div>
+    </section>
+
+     <!-- FOOTER SECTION -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                
+                <!-- About Info -->
+                <div class="footer-about">
+                    <div class="footer-logo">
+                        <span class="footer-logo-text"><i class="fa-solid fa-compass"></i> Ceylon Horizons</span>
+                    </div>
+                    <p>Discover the rich heritage, vibrant wildlife, and serene beaches of Sri Lanka with our curated travel planning guides. Your next journey starts here.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-btn" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-btn" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-btn" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <!-- Quick Navigation Links -->
+                <div class="footer-links-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../travel.html">Travel </a></li>
+                        <li><a href="../wildlife.html">Wildlife Safari</a></li>
+                        <li><a href="../water-diving.html">Water & Diving</a></li>
+                        <li><a href="../services.html">Services</a></li>
+                        <li><a href="../contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="footer-links-col">
+                    <h4>Contact Us</h4>
+                    <ul class="footer-contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> Colombo, Sri Lanka</li>
+                        <li><i class="fas fa-envelope"></i> pasindunimsaraprabhath@gmail.com</li>
+                        <li><i class="fas fa-phone-alt"></i> +94 759026156</li>
+                    </ul>
+                </div>
+
+                <div class="footer-links-col">
+                    <h4>Ceylon Horizons</h4>
+                    <p style="font-size: 0.9rem; line-height: 1.5; margin-bottom: 1rem;">Explore new destinations, create lasting memories, and travel with ease. We're here to make every journey extraordinary.</p>
+                </div>
+
+                
+
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Ceylon Horizons. All rights reserved. | Crafted with <i class="fas fa-heart"></i> for explorers</p>
+                <p>Colombo, Sri Lanka</p>
+            </div>
+        </div>
+    </footer>
+
+   <script src="../js/main.js"></script>
+    <script src="../js/home.js"></script>
+
+ 
+</body>
+</html>

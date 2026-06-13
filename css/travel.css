@@ -1,0 +1,101 @@
+/* Travel Page Specific Styles */
+
+.travel-hero {
+    background: linear-gradient(135deg, rgba(15, 52, 46, 0.6), rgba(15, 52, 46, 0.4)),
+                url('https://images.pexels.com/photos/5004995/pexels-photo-5004995.jpeg') center/cover no-repeat;
+    background-attachment: fixed;
+    min-height: 80vh;
+}
+
+
+
+.search-section {
+    padding: 3rem 0;
+    background: var(--bg-light);
+    margin-top: -3rem;
+    position: relative;
+    z-index: 10;
+}
+
+.search-box {
+    max-width: 700px;
+    margin: 0 auto;
+    display: flex;
+    background: #ffffff;
+    padding: 0.5rem;
+    border-radius: var(--radius-full);
+    box-shadow: var(--shadow-lg);
+    border: 1px solid var(--border-color);
+}
+
+.search-box input {
+    flex: 1;
+    border: none;
+    padding: 1rem 1.5rem;
+    font-size: 1.05rem;
+    font-family: inherit;
+    border-radius: var(--radius-full) 0 0 var(--radius-full);
+    outline: none;
+    color: var(--text-dark);
+}
+
+.search-box input::placeholder {
+    color: var(--text-muted);
+}
+
+.search-box .btn-search {
+    background: var(--primary);
+    color: #ffffff;
+    border: none;
+    padding: 0 2rem;
+    border-radius: var(--radius-full);
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition-bounce);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.search-box .btn-search:hover {
+    background: var(--accent);
+    transform: scale(1.05);
+}
+
+.travel-destinations {
+    padding: 4rem 0 8rem;
+}
+
+.no-results {
+    text-align: center;
+    padding: 4rem 2rem;
+    color: var(--text-muted);
+    font-size: 1.2rem;
+    font-weight: 500;
+    display: none;
+}
+
+.no-results i {
+    font-size: 3rem;
+    color: var(--border-color);
+    margin-bottom: 1rem;
+    display: block;
+}
+
+@media (max-width: 600px) {
+    .search-box {
+        flex-direction: column;
+        border-radius: var(--radius-md);
+        padding: 1rem;
+        gap: 1rem;
+    }
+    .search-box input {
+        border-radius: var(--radius-sm);
+        padding: 0.8rem;
+    }
+    .search-box .btn-search {
+        padding: 1rem;
+        border-radius: var(--radius-sm);
+        justify-content: center;
+    }
+}

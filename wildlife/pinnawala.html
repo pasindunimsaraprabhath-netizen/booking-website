@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pinnawala Elephant Orphanage | Ceylon Horizons</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/destination.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- EmailJS Client Library -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+<body>
+
+    <!-- GLASS HEADER -->
+    <header class="header-wrapper">
+        <div class="container">
+            <nav class="navbar">
+                <a href="../index.html" class="logo">
+                    <i class="fa-solid fa-compass"></i> Ceylon Horizons
+                </a>
+                <ul class="nav-menu">
+                    <li><a href="../index.html" class="nav-link">Home</a></li>
+                    <li><a href="../travel.html" class="nav-link ">Travel</a></li>
+                    <li><a href="../wildlife.html" class="nav-link">Wildlife</a></li>
+                    <li><a href="../water-diving.html" class="nav-link">Water & Diving</a></li>
+                    <li><a href="../services.html" class="nav-link">Services</a></li>
+                    <li><a href="../contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero-section dest-hero" style="background-image: linear-gradient(135deg, rgba(15, 52, 46, 0.7), rgba(0, 0, 0, 0.4)), url('https://images.pexels.com/photos/23881715/pexels-photo-23881715.jpeg');">
+        <div class="hero-container">
+            <span class="hero-badge reveal"><i class="fas fa-crown"></i>  largest captive elephant care facility in the country.</span>
+            <h1 class="hero-title reveal">Pinnawala Elephant Orphanage</h1>
+            <p class="hero-subtitle reveal">Pinnawala Elephant Orphanage is one of Sri Lanka’s most famous wildlife attractions and the largest captive elephant care facility in the country..</p>
+        </div>
+    </section>
+
+
+<!-- CONTENT SECTION -->
+    <section class="dest-content-section">
+        <div class="container">
+            <div class="dest-content-wrapper">
+                
+                <!-- Main Content -->
+                <div class="dest-main reveal">
+                    <h2>History & Majesty</h2>
+                    <p>Founded by Sri Lanka’s Department of Wildlife Conservation in 1975, the orphanage initially housed a small number of orphaned elephant calves. It was later transferred to the Department of National Zoological Gardens and expanded into a major conservation and breeding center. Over the years, dozens of elephant calves have been born at the facility, making it one of the world's most successful captive elephant breeding programs.</p>
+                    <p>Pinnawala Elephant Orphanage offers a unique opportunity to observe Asian elephants up close while learning about their care and conservation. The daily river bathing sessions, large elephant herd, and educational experiences make it one of Sri Lanka’s most popular family-friendly attractions..</p>
+                    
+                    <div class="dest-gallery">
+                        <img src="https://images.pexels.com/photos/23881715/pexels-photo-23881715.jpeg" alt="Sigiriya Frescoes">
+                        <img src="https://images.pexels.com/photos/9025410/pexels-photo-9025410.jpeg" alt="Lion Rock Paws">
+                    </div>
+                </div>
+      
+
+                <!-- Sidebar -->
+                <div class="dest-sidebar reveal">
+                    <div class="sidebar-widget">
+                        <h3>Quick Facts</h3>
+                        <ul class="widget-info">
+                            <li><i class="fas fa-map-marker-alt"></i> Pinnawala, Kegalle District, Sri Lanka</li>
+                            <li><i class="fas fa-clock"></i> open daily from 8:30 AM to 5:30 PM</li>
+                            <li><i class="fas fa-calendar-alt"></i> Famous For:Elephant bathing sessions and breeding program</li>
+                            <li><i class="fas fa-ticket-alt"></i> Entrance Fee Applies</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="sidebar-widget">
+                        <h3>What to Bring</h3>
+                        <ul class="widget-info">
+                            <li><i class="fas fa-tint"></i> Bottled Water</li>
+                            <li><i class="fas fa-sun"></i> Sun Hat & Sunscreen</li>
+                            <li><i class="fas fa-shoe-prints"></i> Comfortable Walking Shoes</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    
+     <!-- QUICK TRANSFER BOOKING -->
+    <section class="quick-booking-section">
+        <div class="container booking-container">
+            
+        
+            <div class="booking-box reveal">
+                <form id="homeBookingForm" class="booking-grid">
+                    <div class="form-group">
+                        <label><i class="fas fa-map-marker-alt"></i> Pick-up Location</label>
+                        <input type="text" id="pickup" placeholder="e.g., Colombo Airport (CMB)" required>
+                    </div>
+                    <div class="form-group">
+                        <label><i class="fas fa-hotel"></i> Drop-off Pinnawala </label>
+                        <input type="text" id="dropoff" placeholder="e.g., Pinnawala" required>
+                    </div>
+                    <div class="form-group">
+                        <label><i class="fas fa-calendar-alt"></i> Travel Date</label>
+                        <input type="date" id="date" required>
+                    </div>
+                    <div class="form-group">
+                        <label><i class="fas fa-clock"></i> Departure Time</label>
+                        <input type="time" id="time" required>
+                    </div>
+                    <div class="form-group">
+                        <label><i class="fas fa-car-side"></i> Vehicle Type</label>
+                        <select id="vehicleType">
+                            <option>Car (up to 4 persons)</option>
+                            <option>SUV / Jeep (up to 6 persons)</option>
+                            <option>Bus (up to 4 persons)</option>
+                            <option>Van (up to 12 persons)</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" id="homeRequestBtn" class="btn btn-primary">Request Booking</button>
+                    </div>
+                </form>
+                <div id="homeFormMessage" class="modal-msg"></div>
+            </div>
+        </div>
+    </section>
+
+     <!-- FOOTER SECTION -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                
+                <!-- About Info -->
+                <div class="footer-about">
+                    <div class="footer-logo">
+                        <span class="footer-logo-text"><i class="fa-solid fa-compass"></i> Ceylon Horizons</span>
+                    </div>
+                    <p>Discover the rich heritage, vibrant wildlife, and serene beaches of Sri Lanka with our curated travel planning guides. Your next journey starts here.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-btn" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-btn" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-btn" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <!-- Quick Navigation Links -->
+                <div class="footer-links-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../travel.html">Travel Catalog</a></li>
+                        <li><a href="../wildlife.html">Wildlife Safari</a></li>
+                        <li><a href="../water-diving.html">Water & Diving</a></li>
+                        <li><a href="../services.html">Fleet Services</a></li>
+                        <li><a href="../contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="footer-links-col">
+                    <h4>Contact Us</h4>
+                    <ul class="footer-contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> Colombo, Sri Lanka</li>
+                        <li><i class="fas fa-envelope"></i> pasindunimsaraprabhath@gmail.com</li>
+                        <li><i class="fas fa-phone-alt"></i> +94 759026156</li>
+                    </ul>
+                </div>
+
+                
+                <div class="footer-links-col">
+                    <h4>Ceylon Horizons</h4>
+                    <p style="font-size: 0.9rem; line-height: 1.5; margin-bottom: 1rem;">Explore new destinations, create lasting memories, and travel with ease. We're here to make every journey extraordinary.</p>
+                </div>
+
+
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Ceylon Horizons. All rights reserved. | Crafted with <i class="fas fa-heart"></i> for explorers</p>
+                <p>Colombo, Sri Lanka</p>
+            </div>
+        </div>
+    </footer>
+
+   <script src="../js/main.js"></script>
+    <script src="../js/home.js"></script>
+</body>
+</html>
