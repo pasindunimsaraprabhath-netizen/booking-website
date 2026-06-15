@@ -155,12 +155,169 @@
     border: 1px solid #f5c6cb;
 }
 
-@media (max-width: 900px) {
+/* ==========================
+   RESPONSIVE DESIGN
+========================== */
+
+/* Large Laptop */
+@media (max-width: 1200px) {
+
+    .contact-wrapper {
+        gap: 2rem;
+    }
+
+    .contact-info-panel,
+    .contact-form-panel {
+        padding: 3rem 2.5rem;
+    }
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+
     .contact-wrapper {
         grid-template-columns: 1fr;
     }
+
     .contact-info-panel,
     .contact-form-panel {
         padding: 3rem 2rem;
+    }
+
+    .contact-info-panel h2 {
+        font-size: 2rem;
+    }
+
+    .contact-form-panel h3 {
+        font-size: 1.7rem;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+    .contact-section {
+        padding: 4rem 0;
+    }
+
+    .contact-wrapper {
+        gap: 0;
+        border-radius: 20px;
+    }
+
+    .contact-info-panel,
+    .contact-form-panel {
+        padding: 2rem 1.5rem;
+    }
+
+    .contact-info-panel h2 {
+        font-size: 1.8rem;
+    }
+
+    .contact-form-panel h3 {
+        font-size: 1.5rem;
+    }
+
+    .contact-info-panel p {
+        font-size: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .contact-details li {
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .contact-details li i {
+        font-size: 1.2rem;
+    }
+
+    .contact-socials {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        padding: 0.9rem;
+        font-size: 0.95rem;
+    }
+
+    .btn-submit-contact {
+        font-size: 1rem;
+        padding: 0.9rem;
+    }
+}
+
+/* Small Phones */
+@media (max-width: 576px) {
+
+    .contact-section {
+        padding: 3rem 0;
+    }
+
+    .contact-info-panel,
+    .contact-form-panel {
+        padding: 1.5rem;
+    }
+
+    .contact-info-panel h2 {
+        font-size: 1.5rem;
+    }
+
+    .contact-form-panel h3 {
+        font-size: 1.3rem;
+    }
+
+    .contact-details li {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+
+    .contact-socials a {
+        width: 38px;
+        height: 38px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        padding: 0.8rem;
+    }
+}
+
+/* iPhone SE */
+@media (max-width: 375px) {
+
+    .contact-info-panel,
+    .contact-form-panel {
+        padding: 1.2rem;
+    }
+
+    .contact-info-panel h2 {
+        font-size: 1.3rem;
+    }
+
+    .contact-form-panel h3 {
+        font-size: 1.2rem;
+    }
+
+    .btn-submit-contact {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .contact-hero {
+        background-attachment: scroll;
+        min-height: 40vh;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .contact-hero {
+        min-height: 35vh;
     }
 }
